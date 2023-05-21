@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.banner-main {
+  height: 100vh;
+  background-image: url("/pictures/40ea9c34484ddc8969e1f3d17da621bd.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+}
+.banner-main .banner {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr;
+}
+.banner-main .banner .banner-letter-main {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 40px;
+}
+.banner-main .banner .banner-letter-main .letter-design {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  display: grid;
+  align-items: center;
+}
+.banner-main .banner .banner-letter-main .letter-design p {
+  line-height: 60px;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+}
+.banner-main .banner .banner-letter-main .lorem {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+.banner-main .banner .banner-letter-main .lorem i {
+  font-style: normal;
+  color: rgb(188, 183, 183);
+}
+.banner-main .banner .banner-letter-main .footer {
+  grid-row: 4/5;
+  grid-column: 1/2;
+}
+.banner-main .banner .banner-letter-main .footer i {
+  color: white;
+}
+.banner-main .banner .banner-letter-main .footer p {
+  color: white;
+}
+.banner-main .banner .my-picture p {
+  color: white;
+}
+.banner-main .navbar-main {
+  grid-row: 1/2;
+  position: fixed;
+  overflow: hidden;
+  height: 50px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 40px 60px 1fr auto 80px;
+}
+.banner-main .navbar-main .logo-container {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  display: grid;
+  place-items: center;
+  grid-auto-flow: column;
+  grid-column-gap: 2px;
+}
+.banner-main .navbar-main .logo-container i {
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.banner-main .navbar-main .icon-container {
+  grid-row: 1/2;
+  grid-column: 5/6;
+  display: grid;
+  place-items: center;
+}
+.banner-main .navbar-main .icon-container i {
+  color: white;
+}
+.banner-main .navbar-main .menu-container {
+  padding: 0;
+  margin: 0;
+  grid-row: 1/2;
+  grid-column: 4/5;
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: end;
+  grid-auto-columns: 120px;
+}
+.banner-main .navbar-main .menu-container #nav-button {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.banner-main .navbar-main .menu-container #nav-button:hover {
+  color: red;
+}/*# sourceMappingURL=index.css.map */

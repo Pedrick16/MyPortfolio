@@ -1,0 +1,21 @@
+.skills-main {
+  background-color: black;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: 60px 1fr 40px;
+}
+.skills-main .gallery-main {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-column-gap: 40px;
+}
+.skills-main .gallery-main .gallery {
+  border: none; /* Reset all borders */
+  border-right: 2px solid rgb(188, 183, 183); /* Right border */
+  border-bottom: 2px solid red; /* Bottom border */
+  border-radius: 20px;
+}/*# sourceMappingURL=skills.css.map */
