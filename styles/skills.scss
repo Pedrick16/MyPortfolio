@@ -3,7 +3,7 @@
 
     height: 100vh;
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 40px 1fr 40px;
 
     grid-template-rows: 60px 1fr 40px;
 
@@ -32,8 +32,8 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
 
       
-        column-gap: 30px;   
-        row-gap: 30px; 
+        column-gap: 50px;   
+        row-gap: 50px; 
        
         
 
@@ -45,12 +45,14 @@
 
             background-color:rgb(43, 42, 42);
 
-            border: none; /* Reset all borders */
-            border-right: 2px solid      rgb(188, 183, 183); /* Right border */
-            border-bottom: 2px solid rgb(225, 216, 216); /* Bottom border */
+          
             
             display: grid;
             place-items: center;
+
+            border: none; /* Reset all borders */
+            border-right: 2px solid      rgb(188, 183, 183); /* Right border */
+            border-bottom: 2px solid rgb(225, 216, 216); /* Bottom border */
 
                     
          
@@ -64,7 +66,9 @@
             .percent-skill{
                 height: 120px;
                 width: 120px;
-                background-color: rgb(79, 76, 76);
+      
+
+
 
             
 
@@ -76,10 +80,11 @@
              
            
 
-                border-radius: 50%;
-         
-                box-shadow: 6px 6px 10px -1px rgba(237, 237, 237, 0.15),
-                -6px -6px 10px -1px rgba(255,255,255,0.7);
+               
+
+                
+               
+                    
 
             
 
@@ -95,28 +100,16 @@
                     
                
     
-                    border-radius: 50%;
-                    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset -4px -4px 6px -1px rgba(255,255,255,0.7),-0.5px  -0.5px  0px rgba(255,255,255,1),0.5px  0.5px  0px rgba(0,0,0,0.15),0px 12px 10px -10px rgba(0,0,0,0.05);
-                    
+                  
                     display: grid;
-                    grid-template-rows: 1fr 1fr;
+                    grid-template-rows: 1fr ;
                     // place-items: center;
 
-
-                    .number{
-                       
+                    .logo-container{
                         grid-row: 1/2;
-                        display: grid;
-                        align-items: end;
-                        justify-items: center;
-                        i{  
-                            font-size: 20px;
-                            font-weight: bolder;
-                            font-style: normal;
-                        }
-
-                   
                     }
+
+                    
 
                 
                     .name-skill{
@@ -126,7 +119,9 @@
                         align-items: start;
                         justify-items: center;
 
-                        i{
+                        i{  
+                            font-style: normal;
+                            font-size: 20px;
                             color: rgb(222, 210, 210);
                         }
 
@@ -149,6 +144,8 @@
 
                 }
 
+               
+
               
                
                 
@@ -157,11 +154,7 @@
               
             }
 
-            svg{
-                grid-column: 1/2;
-                grid-row: 2/3;
-            }
-
+           
 
         }
 
@@ -169,8 +162,12 @@
             grid-row: 1/2;
             grid-column: 1/2;
 
+           
+
             display: grid;
             grid-template-rows: 40px 1fr 40px;
+
+
  
 
           
@@ -408,14 +405,7 @@
         
     }
     
-    circle{
-        fill: none;
-        stroke: url(#GradientColor);
-        stroke-width: 20px;
-        stroke-dasharray: 472;
-        stroke-dashoffset: 0;
-
-    }
+   
 
     
 
