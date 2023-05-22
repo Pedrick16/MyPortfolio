@@ -29,6 +29,8 @@
 .skills-main .gallery-main .gallery {
   background-color: rgb(43, 42, 42);
   border: none; /* Reset all borders */
+  border-right: 2px solid rgb(188, 183, 183); /* Right border */
+  border-bottom: 2px solid rgb(225, 216, 216); /* Bottom border */
   display: grid;
   place-items: center;
 }
@@ -64,14 +66,14 @@
   font-weight: bolder;
   font-style: normal;
 }
-.skills-main .gallery-main .gallery .percent-skill .inner .name-skill i {
-  color: rgb(212, 201, 201);
-}
 .skills-main .gallery-main .gallery .percent-skill .inner .name-skill {
   grid-row: 2/3;
   display: grid;
   align-items: start;
   justify-items: center;
+}
+.skills-main .gallery-main .gallery .percent-skill .inner .name-skill i {
+  color: rgb(222, 210, 210);
 }
 .skills-main .gallery-main .gallery svg {
   grid-column: 1/2;
