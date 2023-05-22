@@ -5,17 +5,226 @@
   grid-template-columns: 200px 1fr 200px;
   grid-template-rows: 60px 1fr 40px;
 }
+.skills-main .logo {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  display: grid;
+  place-items: center;
+}
+.skills-main .logo i {
+  font-style: normal;
+  font-size: 30px;
+  color: gainsboro;
+  font-weight: bolder;
+}
 .skills-main .gallery-main {
   grid-row: 2/3;
   grid-column: 2/3;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-  grid-column-gap: 40px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 30px;
 }
 .skills-main .gallery-main .gallery {
+  background-color: rgb(43, 42, 42);
   border: none; /* Reset all borders */
-  border-right: 2px solid rgb(188, 183, 183); /* Right border */
-  border-bottom: 2px solid red; /* Bottom border */
-  border-radius: 20px;
+  display: grid;
+  place-items: center;
+}
+.skills-main .gallery-main .gallery i {
+  color: whitesmoke;
+}
+.skills-main .gallery-main .gallery .percent-skill {
+  height: 120px;
+  width: 120px;
+  background-color: rgb(79, 76, 76);
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px -1px rgba(237, 237, 237, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  display: grid;
+  place-items: center;
+}
+.skills-main .gallery-main .gallery .percent-skill .inner {
+  height: 110px;
+  width: 110px;
+  background-color: rgb(39, 38, 38);
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgb(255, 255, 255), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.skills-main .gallery-main .gallery .percent-skill .inner .number {
+  grid-row: 1/2;
+  display: grid;
+  align-items: end;
+  justify-items: center;
+}
+.skills-main .gallery-main .gallery .percent-skill .inner .number i {
+  font-size: 20px;
+  font-weight: bolder;
+  font-style: normal;
+}
+.skills-main .gallery-main .gallery .percent-skill .inner .name-skill i {
+  color: rgb(212, 201, 201);
+}
+.skills-main .gallery-main .gallery .percent-skill .inner .name-skill {
+  grid-row: 2/3;
+  display: grid;
+  align-items: start;
+  justify-items: center;
+}
+.skills-main .gallery-main .gallery svg {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.skills-main .gallery-main #gallery1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-rows: 40px 1fr 40px;
+}
+.skills-main .gallery-main #gallery1 .header-skill {
+  grid-row: 1/2;
+}
+.skills-main .gallery-main #gallery1 .header-skill i {
+  font-style: normal;
+  color: whitesmoke;
+}
+.skills-main .gallery-main #gallery1 .progress-footer {
+  grid-row: 3/4;
+  display: grid;
+  place-items: center;
+}
+.skills-main .gallery-main #gallery2 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: 40px 1fr 40px;
+}
+.skills-main .gallery-main #gallery2 .header-skill {
+  grid-row: 1/2;
+}
+.skills-main .gallery-main #gallery2 .header-skill i {
+  font-style: normal;
+  color: whitesmoke;
+}
+.skills-main .gallery-main #gallery2 .progress-footer {
+  grid-row: 3/4;
+  display: grid;
+  place-items: center;
+}
+.skills-main .gallery-main #gallery3 {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  display: grid;
+  grid-template-rows: 40px 1fr 40px;
+}
+.skills-main .gallery-main #gallery3 .header-skill {
+  grid-row: 1/2;
+}
+.skills-main .gallery-main #gallery3 .header-skill i {
+  font-style: normal;
+  color: whitesmoke;
+}
+.skills-main .gallery-main #gallery3 .progress-footer {
+  grid-row: 3/4;
+  display: grid;
+  place-items: center;
+}
+.skills-main .gallery-main #gallery4 {
+  grid-row: 1/2;
+  grid-column: 4/5;
+  display: grid;
+  grid-template-rows: 40px 1fr 40px;
+}
+.skills-main .gallery-main #gallery4 .header-skill {
+  grid-row: 1/2;
+}
+.skills-main .gallery-main #gallery4 .header-skill i {
+  font-style: normal;
+  color: whitesmoke;
+}
+.skills-main .gallery-main .progress-footer {
+  grid-row: 3/4;
+  display: grid;
+  place-items: center;
+}
+.skills-main #gallery5 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-rows: 40px 1fr 40px;
+}
+.skills-main #gallery5 .header-skill {
+  grid-row: 1/2;
+}
+.skills-main #gallery5 .header-skill i {
+  font-style: normal;
+  color: whitesmoke;
+}
+.skills-main #gallery5 .progress-footer {
+  grid-row: 3/4;
+  display: grid;
+  place-items: center;
+}
+.skills-main #gallery6 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: 40px 1fr 40px;
+}
+.skills-main #gallery6 .header-skill {
+  grid-row: 1/2;
+}
+.skills-main #gallery6 .header-skill i {
+  font-style: normal;
+  color: whitesmoke;
+}
+.skills-main #gallery6 .progress-footer {
+  grid-row: 3/4;
+  display: grid;
+  place-items: center;
+}
+.skills-main #gallery7 {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  display: grid;
+  grid-template-rows: 40px 1fr 40px;
+}
+.skills-main #gallery7 .header-skill {
+  grid-row: 1/2;
+}
+.skills-main #gallery7 .header-skill i {
+  font-style: normal;
+  color: whitesmoke;
+}
+.skills-main #gallery7 .progress-footer {
+  grid-row: 3/4;
+  display: grid;
+  place-items: center;
+}
+.skills-main #gallery8 {
+  grid-row: 2/3;
+  grid-column: 4/5;
+  display: grid;
+  grid-template-rows: 40px 1fr 40px;
+}
+.skills-main #gallery8 .header-skill {
+  grid-row: 1/2;
+}
+.skills-main #gallery8 .header-skill i {
+  font-style: normal;
+  color: whitesmoke;
+}
+.skills-main #gallery8 .progress-footer {
+  grid-row: 3/4;
+  display: grid;
+  place-items: center;
+}
+.skills-main circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 0;
 }/*# sourceMappingURL=skills.css.map */
