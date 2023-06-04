@@ -10,14 +10,13 @@
   background-image: url("/pictures/bg-portf.jpg");
   background-size: cover;
   background-repeat: repeat;
-  background-position: center;
   display: grid;
   grid-template-rows: 50px 1fr 50px;
 }
 .home-main .main-content {
   grid-row: 2/3;
   display: grid;
-  grid-template-columns: 40px 1fr 1fr 40px;
+  grid-template-columns: 40px 1fr 1fr 60px;
 }
 .home-main .main-content .main-container {
   grid-column: 2/3;
@@ -34,6 +33,7 @@
   line-height: 60px;
   font-size: 4rem;
   color: rgb(255, 255, 255);
+  text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.5), 2px -2px 2px rgba(0, 0, 0, 0.5), -2px 2px 2px rgba(0, 0, 0, 0.5), 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .home-main .main-content .lorem {
   grid-row: 2/3;
@@ -42,21 +42,25 @@
 .home-main .main-content .lorem i {
   font-style: normal;
   color: rgb(188, 183, 183);
+  text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.5), 2px -2px 2px rgba(0, 0, 0, 0.5), -2px 2px 2px rgba(0, 0, 0, 0.5), 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .home-main .main-content .mypic {
   grid-column: 3/4;
   display: grid;
   place-items: center;
-  background-color: rgb(13, 13, 13);
+}
+.home-main .main-content .mypic img {
+  height: 500px;
+  width: 400px;
 }
 .home-main .navbar-main {
   grid-row: 1/2;
   position: fixed;
   overflow: hidden;
-  height: 50px;
+  height: 40px;
   width: 100vw;
   display: grid;
-  grid-template-columns: 40px auto 1fr auto 60px;
+  grid-template-columns: 40px auto 1fr auto 40px 10px;
 }
 .home-main .navbar-main .logo-container {
   grid-row: 1/2;
@@ -71,15 +75,21 @@
   font-style: normal;
   font-size: 20px;
   color: rgb(255, 255, 255);
+  text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.5), 2px -2px 2px rgba(0, 0, 0, 0.5), -2px 2px 2px rgba(0, 0, 0, 0.5), 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .home-main .navbar-main .icon-container {
+  grid-row: 1/2;
   grid-column: 5/6;
   display: grid;
   place-items: center;
-  display: none;
+  font-size: 20px;
 }
 .home-main .navbar-main .icon-container i {
   color: white;
+  cursor: pointer;
+}
+.home-main .navbar-main .hide-desktop {
+  display: none;
 }
 .home-main .navbar-main .menu-container {
   grid-row: 1/2;
@@ -91,10 +101,143 @@
   justify-items: end;
   grid-auto-columns: 120px;
 }
-.home-main .navbar-main .menu-container #nav-button {
+.home-main .navbar-main .menu-container a {
   color: rgb(255, 255, 255);
   text-decoration: none;
+  text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.5), 2px -2px 2px rgba(0, 0, 0, 0.5), -2px 2px 2px rgba(0, 0, 0, 0.5), 2px 2px 2px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
 }
-.home-main .navbar-main .menu-container #nav-button:hover {
+.home-main .navbar-main .menu-container a:hover {
   color: rgb(202, 194, 194);
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+  .home-main {
+    background-position: center;
+  }
+  .home-main .navbar-main .hide-desktop {
+    display: block;
+  }
+  .home-main .navbar-main .icon-container {
+    display: grid;
+    place-items: center;
+  }
+  .home-main .navbar-main .menu-container {
+    position: fixed;
+    top: 50px;
+    background-color: rgb(68, 67, 67);
+    height: 320px;
+    width: 100vw;
+    transition: height 0.1s ease;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 80px;
+    grid-auto-columns: 1fr;
+    place-items: unset;
+  }
+  .home-main .navbar-main .menu-container a {
+    border-bottom: solid 1px white;
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: 0.4s ease;
+  }
+  .home-main .navbar-main .menu-container a:hover {
+    background-color: black;
+  }
+  .home-main .navbar-main .hide {
+    height: 0;
+  }
+  .home-main .navbar-main .hide a {
+    display: none;
+  }
+  .home-main .main-content .main-container .letter-design {
+    align-items: center;
+  }
+  .home-main .main-content .main-container .letter-design p {
+    text-transform: uppercase;
+    line-height: 35px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.5), 2px -2px 2px rgba(0, 0, 0, 0.5), -2px 2px 2px rgba(0, 0, 0, 0.5), 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  .home-main .main-content .mypic img {
+    height: 400px;
+    width: 400px;
+  }
+  .home-main .main-content .lorem {
+    display: grid;
+    place-items: center;
+  }
+  .home-main .main-content .lorem i {
+    font-style: normal;
+    color: rgb(188, 183, 183);
+    text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.5), 2px -2px 2px rgba(0, 0, 0, 0.5), -2px 2px 2px rgba(0, 0, 0, 0.5), 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+}
+@media (max-width: 578px) {
+  .home-main {
+    background-position: center;
+  }
+  .home-main .navbar-main .hide-desktop {
+    display: block;
+  }
+  .home-main .navbar-main .icon-container {
+    display: grid;
+    place-items: center;
+  }
+  .home-main .navbar-main .menu-container {
+    position: fixed;
+    top: 50px;
+    background-color: rgb(68, 67, 67);
+    height: 320px;
+    width: 100vw;
+    transition: height 0.1s ease;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 80px;
+    grid-auto-columns: 1fr;
+    place-items: unset;
+  }
+  .home-main .navbar-main .menu-container a {
+    border-bottom: solid 1px white;
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: 0.4s ease;
+  }
+  .home-main .navbar-main .menu-container a:hover {
+    background-color: black;
+  }
+  .home-main .navbar-main .hide {
+    height: 0;
+  }
+  .home-main .navbar-main .hide a {
+    display: none;
+  }
+  .home-main .main-content .main-container .letter-design {
+    align-items: center;
+  }
+  .home-main .main-content .main-container .letter-design p {
+    text-transform: uppercase;
+    line-height: 35px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.5), 2px -2px 2px rgba(0, 0, 0, 0.5), -2px 2px 2px rgba(0, 0, 0, 0.5), 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  .home-main .main-content .mypic img {
+    height: 400px;
+    width: 400px;
+  }
+  .home-main .main-content .lorem {
+    display: grid;
+    place-items: center;
+  }
+  .home-main .main-content .lorem i {
+    font-style: normal;
+    color: rgb(188, 183, 183);
+    text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.5), 2px -2px 2px rgba(0, 0, 0, 0.5), -2px 2px 2px rgba(0, 0, 0, 0.5), 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
 }/*# sourceMappingURL=index.css.map */
