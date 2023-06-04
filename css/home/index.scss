@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.home-main {
+
+    height: 100vh;
+    width: 100vw;
+  
+    background-image: url('/pictures/bg-portf.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+  
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+  
+
+
+
+
+
+
+
+
+
+
+    .main-content {
+        grid-row: 2/3;
+
+
+        display: grid;
+        grid-template-columns: 40px 1fr 1fr 40px;
+
+
+        .main-container {
+
+            grid-column: 2/3;
+            display: grid;
+            grid-template-rows:  2fr 1fr;
+
+
+
+
+
+
+
+
+
+
+
+            .letter-design {
+
+                grid-row: 1/2;
+                grid-column: 1/2;
+
+
+
+                display: grid;
+                align-items: end;
+
+
+
+
+
+                p {
+                    line-height: 60px;
+                    font-size: 4rem;
+                    // color: rgb(221, 214, 214);
+                    color: rgb(255, 255, 255);
+                }
+
+
+            }
+        }
+
+        .lorem {
+
+            grid-row: 2/3;
+            grid-column: 1/2;
+
+
+            i {
+
+                font-style: normal;
+                color: rgb(188, 183, 183);
+            }
+
+        }
+
+
+
+
+
+        .mypic {
+            grid-column: 3/4;
+
+            display: grid;
+            place-items: center;
+            background-color: rgb(13, 13, 13);
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+    .navbar-main {
+        grid-row: 1/2;
+
+        position: fixed;
+        overflow: hidden;
+
+        height: 50px;
+        width: 100vw;
+
+
+
+
+        display: grid;
+        grid-template-columns: 40px auto 1fr auto 60px;
+
+
+
+
+
+
+
+
+
+
+
+        .logo-container {
+            grid-row: 1/2;
+            grid-column: 2/3;
+
+            display: grid;
+            place-items: center;
+            grid-auto-flow: column;
+            grid-column-gap: 2px;
+
+
+
+
+            i {
+                font-weight: bolder;
+                font-style: normal;
+                font-size: 20px;
+                color: rgb(255, 255, 255);
+            }
+
+
+        }
+
+        .icon-container {
+          
+            grid-column: 5/6;
+
+            display: grid;
+            place-items: center;
+            display: none;
+
+
+            i {
+                color: white;
+            }
+        }
+
+
+        .menu-container {
+
+            grid-row: 1/2;
+            grid-column: 4/5;
+
+            list-style: none;
+
+            display: grid;
+            grid-auto-flow: column;
+
+            align-items: center;
+            justify-items: end;
+
+
+
+
+
+
+            grid-auto-columns: 120px;
+
+
+            #nav-button {
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+            }
+
+            #nav-button:hover {
+                color: rgb(202, 194, 194);
+
+            }
+
+        }
+
+
+
+    }
+}
