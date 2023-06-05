@@ -123,6 +123,10 @@
     font-size: 60px;
     color: rgb(255, 255, 255);
   }
+  .home-main .main-content .main-container .mypic img {
+    height: 350px;
+    width: 350px;
+  }
 }
 @media (max-width: 768px) and (min-width: 577px) {
   .home-main {
@@ -193,6 +197,9 @@
   .home-main {
     background-position: center;
   }
+  .home-main .navbar-main {
+    grid-template-columns: 10px auto 1fr auto 30px 15px;
+  }
   .home-main .navbar-main .hide-desktop {
     display: block;
   }
@@ -237,7 +244,7 @@
   .home-main .main-content .main-container {
     grid-column: 2/3;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 2fr auto;
+    grid-template-rows: auto auto auto;
   }
   .home-main .main-content .main-container .letter-design {
     grid-row: 1/2;
