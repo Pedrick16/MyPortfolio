@@ -199,6 +199,7 @@ body, html {
 }
 @media (max-width: 578px) {
   .home-main {
+    grid-template-rows: 50px 1fr 20px;
     background-position: center;
   }
   .home-main .navbar-main {
