@@ -173,7 +173,7 @@
 
 @media (max-width: 578px) {
   .skills-main {
-    height: 100vh;
+    height: auto;
     background-image: url("/pictures/black-white-bokeh-background_114106-832.avif");
     background-repeat: no-repeat;
     background-size: cover;
