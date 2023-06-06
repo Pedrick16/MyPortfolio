@@ -278,4 +278,8 @@
     height: 350px;
     width: 350px;
   }
+  .home-main .main-content .main-container .mypic:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
 }/*# sourceMappingURL=index.css.map */
