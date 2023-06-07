@@ -284,8 +284,8 @@ body, html {
     place-items: center;
   }
   .home-main .main-content .main-container .mypic img {
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
   }
   .home-main .main-content .main-container .mypic:hover {
     transform: scale(1.1);

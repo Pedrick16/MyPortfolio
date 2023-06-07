@@ -2,6 +2,14 @@ const icon = document.querySelector('#icon');
 const menuContainer = document.querySelector('.menu-container');
 const clickMenu = document.querySelectorAll('#click-menu')
 
+if (icon.classList.contains('fa-bars')) {
+ 
+  menuContainer.classList.remove('show')
+  menuContainer.classList.add('hide')
+} 
+  
+
+
 icon.addEventListener('click',()=>{
     if (icon.classList.contains('fa-bars')) {
         icon.classList.remove('fa-bars')
