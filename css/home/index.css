@@ -59,6 +59,10 @@ body, html {
   height: 500px;
   width: 400px;
 }
+.home-main .main-content .main-container .mypic:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 .home-main .navbar-main {
   grid-row: 1/2;
   position: fixed;
@@ -265,7 +269,8 @@ body, html {
   .home-main .main-content .main-container .lorem {
     grid-row: 3/4;
     display: grid;
-    place-items: center;
+    align-items: start;
+    padding-bottom: 20px;
   }
   .home-main .main-content .main-container .lorem i {
     font-style: normal;
