@@ -4,7 +4,7 @@
   background-color: rgb(4, 3, 3);
   display: grid;
   grid-template-columns: 100px 1fr 100px;
-  grid-template-rows: 40px 80px 80px 1fr 120px;
+  grid-template-rows: 40px 80px 80px 1fr 60px;
 }
 .skills-main .title-skill {
   grid-column: 1/2;
@@ -14,14 +14,14 @@
 }
 .skills-main .title-skill p {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   writing-mode: vertical-lr;
   text-orientation: upleft;
   transform: rotate(180deg);
   text-transform: uppercase;
   font-weight: 900;
   text-decoration: underline;
-  text-decoration-color: rgb(170, 162, 162);
+  text-decoration-color: red;
   text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.5), 2px -2px 2px rgba(0, 0, 0, 0.5), -2px 2px 2px rgba(0, 0, 0, 0.5), 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .skills-main .title-skill p:hover {
@@ -152,7 +152,7 @@
     grid-template-rows: 40px 40px auto 1fr 20px;
   }
   .skills-main .title-skill p {
-    font-size: 15px;
+    display: none;
   }
   .skills-main .intro-title-skill p {
     font-size: 20px;

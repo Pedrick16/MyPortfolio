@@ -80,7 +80,7 @@ body, html {
   grid-auto-flow: column;
   grid-column-gap: 2px;
 }
-.home-main .navbar-main .logo-container i {
+.home-main .navbar-main .logo-container a i {
   font-weight: bolder;
   font-style: normal;
   font-size: 20px;
@@ -260,6 +260,7 @@ body, html {
     align-items: end;
   }
   .home-main .main-content .main-container .letter-design p {
+    font-style: normal;
     text-transform: uppercase;
     line-height: 30px;
     font-size: 30px;

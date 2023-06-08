@@ -150,6 +150,7 @@ body, html {
 
     .navbar-main {
         grid-row: 1/2;
+    
 
         position: fixed;
         overflow: hidden;
@@ -185,15 +186,18 @@ body, html {
 
 
 
+            a{
+                i {
+                    font-weight: bolder;
+                    font-style: normal;
+                    font-size: 20px;
+                    color: rgb(255, 255, 255);
+                    text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.5), 2px -2px 2px rgba(0, 0, 0, 0.5), -2px 2px 2px rgba(0, 0, 0, 0.5), 2px 2px 2px rgba(0, 0, 0, 0.5);
+                }
+    
 
-            i {
-                font-weight: bolder;
-                font-style: normal;
-                font-size: 20px;
-                color: rgb(255, 255, 255);
-                text-shadow: -2px -2px 2px rgba(0, 0, 0, 0.5), 2px -2px 2px rgba(0, 0, 0, 0.5), -2px 2px 2px rgba(0, 0, 0, 0.5), 2px 2px 2px rgba(0, 0, 0, 0.5);
             }
-
+           
 
         }
 
@@ -465,6 +469,7 @@ body, html {
 
             .menu-container {
                 position: fixed;
+              
                 top: 50px;
                 background-color: rgb(68, 67, 67);
                 height: 320px;
@@ -511,7 +516,7 @@ body, html {
             .hide {
                 height: 0;
 
-                a {
+                a{
                     display: none;
                 }
             }
@@ -553,6 +558,7 @@ body, html {
 
 
                     p{  
+                        font-style: normal;
                         text-transform: uppercase;
                         line-height: 30px;
                         font-size: 30px;
